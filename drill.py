@@ -11,23 +11,27 @@ dinner_notes = "Top loin with hot sauce and blue cheese. NOT BUFFALO MEAT."
 
 print ("Today's specials")
 print ("", 20)
-print ("Breakfast: ")
-
+print ("Breakfast: ", end="")
 print ("", breakfast_special)
-
 print ("", breakfast_notes)
 
-print
-
-print ("Lunch: "),
+print ("Lunch: ", end="")
 print ("", lunch_special),
 print ("", lunch_notes)
-
-print
-
-print ("Dinner: "),
-
-print
-
-print ("", dinner_special),
+print ("Dinner: ", end="")
+print ("", dinner_special)
 print ("", dinner_notes)
+
+meal_time = input("Which mealtime do you want, [breakfast, lunch, or dinner]: ").lower().strip()
+print("preference: ", meal_time)
+if meal_time == 'breakfast':
+    print("", breakfast_special)
+    print("", breakfast_notes)
+elif meal_time ==  'lunch':
+    print("", lunch_special)
+    print("", lunch_notes)
+elif meal_time == 'dinner':
+    print("", dinner_special)
+    print("", dinner_notes)
+else:
+    print("Your input for meal_time is invalid")
