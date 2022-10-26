@@ -21,19 +21,17 @@ print ("", lunch_notes)
 print ("Dinner: ", end="")
 print ("", dinner_special)
 print ("", dinner_notes)
-while True:
-    meal_time = input("Which mealtime do you want, [breakfast, lunch, or dinner]: ").lower().strip()
-    print("preference: ", meal_time)
-    if meal_time == 'breakfast':
-        print("", breakfast_special)
-        print("", breakfast_notes)
-    elif meal_time ==  'lunch':
-        print("", lunch_special)
-        print("", lunch_notes)
-    elif meal_time == 'dinner':
-        print("", dinner_special)
-        print("", dinner_notes)
-    elif meal_time == 'q':
-        break
-    else:
-        print("Your input for meal_time is invalid")
+
+meal_time = input("Which mealtime do you want, [breakfast, lunch, or dinner]: ").lower().strip()
+print("preference: ", meal_time)
+if meal_time == 'breakfast':
+    print("", breakfast_special)
+    print("", breakfast_notes)
+elif meal_time ==  'lunch':
+    print("", lunch_special)
+    print("", lunch_notes)
+elif meal_time == 'dinner':
+    print("", dinner_special)
+    print("", dinner_notes)
+else:
+    print("Your input for meal_time is invalid")
